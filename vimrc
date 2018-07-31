@@ -41,6 +41,9 @@ Plug 'ervandew/supertab'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'vim-scripts/gitignore'
 
+" Linting and formatting
+Plug 'w0rp/ale'
+
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'int3/vim-extradite'
