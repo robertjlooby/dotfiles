@@ -65,6 +65,7 @@ Plug 'kien/rainbow_parentheses.vim'
 
 " Haskell
 Plug 'alx741/vim-hindent', { 'for': 'haskell' }
+let g:hindent_command = "stack exec -- hindent"
 
 " Ruby
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
