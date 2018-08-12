@@ -1,7 +1,7 @@
 [user]
 	name = Rob Looby
 	email = robertjlooby@gmail.com
-	signingkey = 6CD187E7204064C7
+	signingkey = 0EC7BBF69AF8EA17
 [push]
 	default = current
 [core]
