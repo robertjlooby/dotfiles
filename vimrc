@@ -507,3 +507,19 @@ set completeopt+=longest
 let g:SuperTabDefaultCompletionType = '<c-x><c-p>'
 
 " }}}
+
+" ALE {{{
+
+call ale#linter#Define('haskell', {
+\   'name': 'stack_hlint',
+\   'aliases': ['stack-hlint'],
+\   'executable': 'stack',
+\   'command': 'stack exec hlint -- --color=never --json -',
+\   'callback': 'ale_linters#haskell#hlint#Handle',
+\})
+
+let g:ale_linters = {
+\   'haskell': ['stack-ghc', 'stack-build', 'stack-hlint'],
+\}
+
+" }}}

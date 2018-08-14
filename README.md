@@ -25,7 +25,7 @@ To install/update vim plugins, `:PlugInstall`/`:PlugUpdate` in vim
   * `sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh`
 * Haskell tools:
   * `brew install stack`
-  * `stack install hlint` (ALE needs this to be global right now)
+  * `stack build --copy-compiler-tool hlint` (per project)
   * `stack build --copy-compiler-tool hindent` (per project)
 * Set up PGP:
   * Install [Keybase](https://keybase.io)
